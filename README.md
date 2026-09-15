@@ -6,7 +6,7 @@ En esta práctica vamos a subir de nivel. Ya no trabajarás solo/a: vas a colabo
 
 Una **rama** (*branch*) es una línea de trabajo independiente dentro de un repositorio. Al crear una rama desde `main`, partes de la misma versión del código, pero los cambios que hagas en ella no afectan a la rama principal hasta que decidas integrarlos.
 
-Su objetivo es poder desarrollar una funcionalidad, corregir un error o probar una idea de forma aislada y segura. Así, varias personas pueden trabajar al mismo tiempo en tareas diferentes sin sobrescribirse los cambios. Cuando el trabajo está listo, la rama se fusiona con `main`, normalmente mediante un Pull Request.
+Su objetivo es poder desarrollar una funcionalidad, corregir un error o probar una idea de forma aislada y segura. Así, varias personas pueden trabajar al mismo tiempo en tareas diferentes sin sobrescribirse los cambios. Cuando el trabajo está listo, la rama se fusiona con `main`, normalmente mediante un **Pull Request**.
 
 ## 1. ¿Qué es un Pull Request?
 
@@ -102,6 +102,15 @@ Ahora el **Colaborador** intentará enviar su trabajo.
 
 En un proyecto de software libre esta situación también es habitual y no implica necesariamente una mala organización. Los colaboradores pueden trabajar por iniciativa propia y proponer mejoras sobre partes del código que ya han cambiado otros. En ese caso, los mantenedores revisan el PR, deciden qué propuesta encaja mejor con el proyecto y, si es necesario, piden adaptar los cambios antes de fusionarlos.
 
+### Avisos del Pull Request
+
+GitHub puede enviar avisos por correo electrónico a las personas relacionadas con el PR, siempre que tengan activadas las notificaciones:
+
+* **Colaborador:** recibirá un aviso cuando el propietario comente, solicite cambios, cierre o fusione el PR.
+* **Propietario:** recibirá avisos cuando el colaborador abra el PR, añada comentarios o suba nuevos cambios a su rama.
+
+El colaborador también puede comprobar el estado del PR en GitHub: aparecerá como **Open** (abierto), **Closed** (cerrado sin fusionar) o **Merged** (fusionado).
+
 ---
 
 ## 7. Resolviendo el Conflicto desde VS Code
@@ -137,6 +146,6 @@ if __name__ == "__main__":
 ## 8. Resultado Final
 
 *   **Propietario:** Tu rama `main` ahora tiene el código de ambos perfectamente integrado.
-*   **Colaborador:** Haz `git checkout main` y luego `git pull`. ¡Ya tienes el trabajo de los dos en tu ordenador!
+*   **Colaborador:** En VS Code, cambia a la rama `main` desde el selector de ramas y pulsa **Sincronizar cambios** en la pestaña de Control de código fuente. Si `main` no aparece, abre el menú `...` y selecciona **Fetch**. ¡Ya tienes el trabajo de los dos en tu ordenador!
 
 **Entrega:** El repositorio del Propietario debe mostrar el historial de ramas, el Pull Request cerrado y el archivo `tareas.py` final con todas las funciones.
